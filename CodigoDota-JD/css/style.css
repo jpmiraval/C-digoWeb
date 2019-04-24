@@ -1,0 +1,51 @@
+@font-face{
+    font-family:'Montserrat';
+    font-style:normal;
+    font-weight:300;
+    src:local('Montserrat Light'), local('Montserrat-Light'),url(https://cdn1-v3.gamesports.net/fonts/montserrat-light.woff)
+
+    format('woff2')}
+
+@font-face{font-family:'Montserrat';
+    font-style:normal;
+    font-weight:400;
+    src:local('Montserrat Regular'),local('Montserrat-Regular'),url(https://cdn1-v3.gamesports.net/fonts/montserrat-regular.woff)
+    format('woff2')}
+
+@font-face{font-family:'Montserrat';
+    font-style:normal;
+    font-weight:600;
+    src:local('Montserrat Semibold'),local('Montserrat-Semibold'),url(https://cdn1-v3.gamesports.net/fonts/montserrat-semibold.woff)
+    format('woff2')}
+
+@font-face{font-family:'Montserrat';
+    font-style:normal;
+    font-weight:700;
+    src:local('Montserrat Bold'),
+    local('Montserrat-Bold'),
+    url(https://cdn1-v3.gamesports.net/fonts/montserrat-bold.woff)
+    format('woff2')}
+
+
+.qc-cmp-button,
+.qc-cmp-button.qc-cmp-secondary-button:hover {
+    background-color: #ec1c24 !important;
+    border-color: #ec1c24 !important;
+}
+.qc-cmp-button:hover,
+.qc-cmp-button.qc-cmp-secondary-button {
+    background-color: transparent !important;
+    border-color: #ec1c24 !important;
+}
+.qc-cmp-alt-action,
+.qc-cmp-link {
+    color: #ec1c24 !important;
+}
+.qc-cmp-button,
+.qc-cmp-button.qc-cmp-secondary-button:hover {
+    color: #ccc !important;
+}
+.qc-cmp-button:hover,
+.qc-cmp-button.qc-cmp-secondary-button {
+    color: #ccc !important;
+}
