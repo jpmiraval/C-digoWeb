@@ -1,29 +1,8 @@
 <!DOCTYPE html>
 <html language="es">
-<style>
-  .qc-cmp-button,
-  .qc-cmp-button.qc-cmp-secondary-button:hover {
-    background-color: #ffffff !important;
-    border-color: #ec1c24 !important;
-  }
-  .qc-cmp-button:hover,
-  .qc-cmp-button.qc-cmp-secondary-button {
-    background-color: transparent !important;
-    border-color: #ec1c24 !important;
-  }
-  .qc-cmp-alt-action,
-  .qc-cmp-link {
-    color: #ec1c24 !important;
-  }
-  .qc-cmp-button,
-  .qc-cmp-button.qc-cmp-secondary-button:hover {
-    color: #ccc !important;
-  }
-  .qc-cmp-button:hover,
-  .qc-cmp-button.qc-cmp-secondary-button {
-    color: #ccc !important;
-  }
-</style>
+
+
+
 
 <head>
 
@@ -36,11 +15,128 @@
   <link rel="icon" type="image/png" sizes="192x192" href=img/favicon.ico">
   <LINK REL=StyleSheet HREF="css/style.css" TYPE="text/css" MEDIA=screen>
   <LINK REL=StyleSheet HREF="css/CSS.css" MEDIA=screen>
+  <link rel="stylesheet" href="css/example.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+    }
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+  <style>
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+  </style>
 
   <title>Código Dota</title>
+
    <script>const lozad_observer = lozad('[data-src]'); const lozad_observer_bg = lozad('[data-background-image]'); lozad_observer.observe(); lozad_observer_bg.observe();</script>
 
   </head>
+
+
 
 <header id="header" class="scroll">
   <div id="header-container">
@@ -74,28 +170,64 @@
         </ul></nav>
       </div>
 
-      <div id="header-socials">
-        <ul>
-          <li><a href="https://www.facebook.com/joinDOTA/" target="_blank" rel="noopener"><i class="icon-facebook"></i></a></li>							<li><a href="https://www.twitter.com/joinDOTA" target="_blank" rel="noopener"><i class="icon-twitter"></i></a></li>							<li><a href="https://www.instagram.com/joindota/" target="_blank" rel="noopener"><i class="icon-instagram"></i></a></li>							<li><a href="https://www.youtube.com/joinDOTA" target="_blank" rel="noopener"><i class="icon-youtube"></i></a></li>							<li><a href="https://www.twitch.tv/joinDOTARed" target="_blank" rel="noopener"><i class="icon-twitch"></i></a></li>														<li><a href="https://www.joindota.com/en/redirect/2801" target="_blank" rel="noopener"><i class="icon-discord"></i></a></li>																				</ul>
-      </div>
 
       <div id="header-deco"></div>
     </div>
   </div>
 </header>
 
+
 <body>
+
+
+
+<div class="main">
+  <div class="container">
+    <div id="slides">
+      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+    </div>
+  </div>
+  <!-- End SlidesJS Required: Start Slides -->
+
+  <!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
+</div>
+
+
+
+
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
 <div id="container">
 
+
   <div class="page-title page-title-hidden"><h1>Código Dota Home</h1></div>
 
-  <section class="landing-section">
 
 
-    <!-- CONTENIDO DE LAS NOTICIAS ! -->
+
     <ul class="widget-list widget-list-full widget-list-float">
       <li class="widget-list-float-right"><div class="widget widget-ticker widget-matchticker widget-matchticker-coverages widget-xl">
 
@@ -262,11 +394,11 @@
       <div class="section-title"><h2>TORNEOS</h2></div>
 
       <li><div class="widget widget-teaser widget-content widget-news widget-open">
-        <a href="https://www.joindota.com/en/news/81549-nips-shaky-group-stage-the-europeans-only-place-third" class="widget-block">
+        <a href="index.html" class="widget-block">
           <div class="widget-content-img image-present"><div style="background-image:url('http://localhost:63342/CodigoDota-JD/img/DOTAPIT.png');"></div><div><img src="http://localhost:63342/CodigoDota-JD/img/DOTAPIT.jpeg" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>OGA DOTA PIT MINOR</h3><i class="icon-content tag-icon"></i></div>
           </a>
       </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
-      <a href="https://www.joindota.com/en/news/81483-sign-up-for-the-bitburger-brewmasters-cup" class="widget-block">
+      <a href="index.html" class="widget-block">
         <div class="widget-content-img image-present"><div style="background-image:url('http://localhost:63342/CodigoDota-JD/img/MDL.jpg');"></div><div><img src="http://localhost:63342/CodigoDota-JD/img/MDL.jpg" alt="Sign up for the Bitburger Brewmaster’s Cup"></div></div>		<div class="widget-content-title"><h3>MDL DISNEYLAND PARIS MAJOR</h3><i class="icon-content tag-icon"></i></div>
         </a>
     </div></li>
@@ -276,48 +408,48 @@
 
       <div class="section-title"><h2>Últimas Noticias</h2></div>
       <li><div class="widget widget-teaser widget-content widget-news widget-open">
-        <a href="https://www.joindota.com/en/news/81549-nips-shaky-group-stage-the-europeans-only-place-third" class="widget-block">
-          <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>NiP's shaky group stage: the Europeans only place third</h3><i class="icon-content tag-icon"></i></div>
-          <div class="widget-content-teaser"><p>The first group of the Dota PIT Minor is finished. Peter 'ppd' Dager and his team-mates lost their favorite status before the playoffs have even started.</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
+        <a href="index.html" class="widget-block">
+          <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+          <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
         </a>
       </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
-      <a href="https://www.joindota.com/en/news/81483-sign-up-for-the-bitburger-brewmasters-cup" class="widget-block">
-        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81483_thumb.jpg?1556030283');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81483_thumb.jpg?1556030283" alt="Sign up for the Bitburger Brewmaster’s Cup"></div></div>		<div class="widget-content-title"><h3>Sign up for the Bitburger Brewmaster’s Cup</h3><i class="icon-content tag-icon"></i></div>
-        <div class="widget-content-teaser"><p>Gather your four best friends and sign up for the Bitburger Brewmaster’s Cup now! The community tournament will feature up to 64 teams in an epic battle for interesting prizes!</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556092800" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 03:00:00 GMT-0500 (hora estándar de Perú)">7h 16m</span></div><div>0 <i class="icon-comments"></i></div></div>
+      <a href="index.html" class="widget-block">
+        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+        <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
       </a>
     </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
-      <a href="https://www.joindota.com/en/news/81522-majestic-continues-their-underdog-run-defeats-ehome-in-croatia" class="widget-block">
-        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81522_thumb.jpg?1556073050');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81522_thumb.jpg?1556073050" alt="Majestic continues their underdog run, defeats EHOME in Croatia"></div></div>		<div class="widget-content-title"><h3>Majestic continues their underdog run, defeats EHOME in Croatia</h3><i class="icon-content tag-icon"></i></div>
-        <div class="widget-content-teaser"><p>South American underdogs Majestic Esports maintained their strong play at the Dota PIT Minor with another series win against EHOME on Day Two.</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556048280" data-ago="0" data-force-rel="0" title="Tue Apr 23 2019 14:38:00 GMT-0500 (hora estándar de Perú)">19h 38m</span></div><div>4 <i class="icon-comments"></i></div></div>
+      <a href="index.html" class="widget-block">
+        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+        <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
       </a>
     </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
-      <a href="https://www.joindota.com/en/news/81519-xcalibur-and-singularity-dominate-in-the-joindota-league-europe-finals" class="widget-block">
-        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81519_thumb.jpg?1556047815');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81519_thumb.jpg?1556047815" alt="Xcalibur and Singularity dominate in the joinDOTA League Europe Finals"></div></div>		<div class="widget-content-title"><h3>Xcalibur and Singularity dominate in the joinDOTA League Europe Finals</h3><i class="icon-content tag-icon"></i></div>
-        <div class="widget-content-teaser"><p>The Swedish carry was untouchable as Team Singularity handly defeated Hippomaniacs 3-0 in the joinDOTA League Europe Finals.</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556044740" data-ago="0" data-force-rel="0" title="Tue Apr 23 2019 13:39:00 GMT-0500 (hora estándar de Perú)">20h 37m</span></div><div>1 <i class="icon-comments"></i></div></div>
+      <a href="index.html" class="widget-block">
+        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+        <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
       </a>
     </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
-      <a href="https://www.joindota.com/en/news/81498-vg-leaks-unconfirmed-the-international-2019-dates" class="widget-block">
-        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81498_thumb.jpg?1556028154');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81498_thumb.jpg?1556028154" alt="VG leaks unconfirmed The International 2019 dates"></div></div>		<div class="widget-content-title"><h3>VG leaks unconfirmed The International 2019 dates</h3><i class="icon-content tag-icon"></i></div>
-        <div class="widget-content-teaser"><p>The International 2019 will undoubtedly be once again the highlight of this season. However, we still haven't gotten any official statement so far when the event will be taking place in Shanghai. Now Vici Gaming leaked unofficial dates in August.</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556028000" data-ago="0" data-force-rel="0" title="Tue Apr 23 2019 09:00:00 GMT-0500 (hora estándar de Perú)">1d 1h</span></div><div>9 <i class="icon-comments"></i></div></div>
+      <a href="index.html" class="widget-block">
+        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+        <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
       </a>
     </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
-      <a href="https://www.joindota.com/en/news/81495-complexity-with-last-minute-changes-before-major" class="widget-block">
-        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81495_thumb.jpg?1556023656');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81495_thumb.jpg?1556023656" alt="compLexity with last minute changes before Major"></div></div>		<div class="widget-content-title"><h3>compLexity with last minute changes before Major</h3><i class="icon-content tag-icon"></i></div>
-        <div class="widget-content-teaser"><p>Only two days ago Team Team announced that they'll replace two players. Now compLexity Gaming made a similar move and has swapped one of their players.</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556025600" data-ago="0" data-force-rel="0" title="Tue Apr 23 2019 08:20:00 GMT-0500 (hora estándar de Perú)">1d 1h</span></div><div>4 <i class="icon-comments"></i></div></div>
+      <a href="index.html" class="widget-block">
+        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+        <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
       </a>
     </div></li>
-      <li><div class="widget widget-teaser widget-content widget-headline widget-small">
-        <a href="https://www.joindota.com/en/headlines/21369-virtus-pro-announces-the-new-brand-design" class="widget-block">
-          <div class="widget-content-title"><h3>Virtus.pro announces the new brand design</h3><i class="icon-headline tag-icon"></i></div>
-          <div class="widget-bottom-info"><div><span class="itime " data-time="1542284700" data-ago="0" data-force-rel="0" title="Thu Nov 15 2018 07:25:00 GMT-0500 (hora estándar de Perú)">2018-11-15</span></div><div>3 <i class="icon-comments"></i></div></div>
+      <li><div class="widget widget-teaser widget-content widget-news widget-open">
+        <a href="index.html" class="widget-block">
+          <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+          <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
         </a>
-      </div></li><li><div class="widget widget-teaser widget-content widget-headline widget-small">
-      <a href="https://www.joindota.com/en/headlines/21299-esl-one-hamburg-2018-quick-look-behind-the-curtains" class="widget-block">
-        <div class="widget-content-title"><h3>ESL One Hamburg 2018: Quick look behind the curtains</h3><i class="icon-headline tag-icon"></i></div>
-        <div class="widget-bottom-info"><div><span class="itime " data-time="1540324680" data-ago="0" data-force-rel="0" title="Tue Oct 23 2018 14:58:00 GMT-0500 (hora estándar de Perú)">2018-10-23</span></div><div>0 <i class="icon-comments"></i></div></div>
+      </div></li><li><div class="widget widget-teaser widget-content widget-news widget-open">
+      <a href="index.html" class="widget-block">
+        <div class="widget-content-img image-present"><div style="background-image:url('https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180');"></div><div><img src="https://cdn0.gamesports.net/content_teasers/81000/81549_thumb.jpg?1556108180" alt="NiP's shaky group stage: the Europeans only place third"></div></div>		<div class="widget-content-title"><h3>Título de Noticia 1 de Prueba</h3><i class="icon-content tag-icon"></i></div>
+        <div class="widget-content-teaser"><p>Este es un texto de contenido de prueba</p></div>		<div class="widget-bottom-info"><div><span class="itime " data-time="1556109900" data-ago="0" data-force-rel="0" title="Wed Apr 24 2019 07:45:00 GMT-0500 (hora estándar de Perú)">2h 31m</span></div><div>0 <i class="icon-comments"></i></div></div>
       </a>
     </div></li>
-    </ul>
+    </ul> -->
 
 
 
@@ -338,6 +470,8 @@
 
 </div>
 
-</body>
+
+
+</body> -->
 </html>
 
